@@ -6,7 +6,7 @@
 # Questions
 * Why we need "if-else" in function process?
 
-Answer:
+Answer: checking number lower than 1 is must be equal 1
 
 
 # Resources
