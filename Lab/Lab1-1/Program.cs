@@ -37,7 +37,7 @@ namespace Lab1_1
                 Console.Write(input[i]);
                 Console.Write(" ");
             }
-            Console.ReadKey();
+                Console.ReadKey();
         }
     }
 }
