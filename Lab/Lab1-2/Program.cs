@@ -8,14 +8,30 @@ namespace Lab1_2
 {
     class BubbleSortFunction
     {
-        static void Main(string[] args)
+        static int[] input()
+        {
+            int x;
+            Console.WriteLine("Input many number : ");
+
+            x = Convert.ToInt32(Console.ReadLine());
+            int[] y = new int[x];
+
+
+            for (int i = 0; i < x; i++)
+            {
+               
+                Console.WriteLine("Number" + i+1);
+                int k = Convert.ToInt32(Console.ReadLine());
+                y[i] = k;
+            }
+
+            return y;
+        }
+
+        static int[] process(int[] input)
         {
             bool flag = true;
 
-            // input
-            int[] input = { 4, 5, 2, 8, 9, 1, 2, 4, 3, 1 };
-
-            // process
             while (flag)
             {
                 flag = false;
@@ -31,13 +47,25 @@ namespace Lab1_2
                 }
             }
 
-            // output
-            for (int i = 0; i != input.Length; i++)
+
+            return input;
+        }
+
+        static void output(int[] number)
+        {
+            foreach (int a in number)
             {
-                Console.Write(input[i]);
+                Console.Write(a);
                 Console.Write(" ");
             }
+
             Console.ReadKey();
+        }
+
+        static void Main(string[] args)
+        {
+            output(process(input()));
         }
     }
 }
+
