@@ -7,26 +7,26 @@
 
 
 ## Revision, put your commit number here
-* Sort from larger to smaller:
-* Without flag:
+* Sort from larger to smaller:475d6412 
+* Without flag:f75a94cd 
 
 ## Questions
 1. How this code can sort number from smaller to larger
  
-Answer: 
+Answer: chang (input[i] < input[i + 1]) to (input[i] > input[i + 1])
 
 2. What if two numbers equal, what will happen? 
 
-Answer: 
+Answer: same number it not swap
 
 3. How many times at line 24 will be executed (as a function of the size of input) 
 
-Answer: 
+Answer: 27
 
 4. Why we need flag variable ? 
 
-Answer: 
+Answer: because use for check loop follow condition to make sort complete
 
 5. When we remove the flag variable, the code will run faster or slower? in which scenario? 
 
-Answer:
+Answer: faster because it run only one loop but not sort complete
